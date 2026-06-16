@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rave Bingo Chicago | Bingo Got a Beat Drop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background-color: #050505;
+            color: #ffffff;
+        }
+        .font-display {
+            font-family: 'Syne', sans-serif;
+        }
+        .neon-cyan {
+            color: #00E5FF;
+            text-shadow: 0 0 10px rgba(0, 229, 255, 0.8), 0 0 20px rgba(0, 229, 255, 0.6);
+        }
+        .neon-red {
+            color: #FF1744;
+            text-shadow: 0 0 10px rgba(255, 23, 68, 0.8), 0 0 20px rgba(255, 23, 68, 0.6);
+        }
+        .neon-border-cyan {
+            border: 1px solid #00E5FF;
+            box-shadow: 0 0 15px rgba(0, 229, 255, 0.4), inset 0 0 10px rgba(0, 229, 255, 0.1);
+        }
+        .neon-border-red {
+            border: 1px solid #FF1744;
+            box-shadow: 0 0 15px rgba(255, 23, 68, 0.4), inset 0 0 10px rgba(255, 23, 68, 0.1);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #00E5FF, #FF1744);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .marquee-container {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .marquee-content {
+            display: inline-block;
+            animation: marquee 20s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .grid-bg {
+            background-image: 
+                linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+    </style>
+</head>
+<body class="grid-bg">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-black/90 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+            <img src="logo.jpeg" alt="Rave Bingo Chicago Logo" class="h-16 md:h-20 w-auto object-contain">
+            <div class="hidden md:flex gap-8 text-sm font-semibold tracking-wide">
+                <a href="#what-is-it" class="hover:text-[#00E5FF] transition-colors">THE VIBE</a>
+                <a href="#who-its-for" class="hover:text-[#FF1744] transition-colors">WHO IT'S FOR</a>
+                <a href="#music" class="hover:text-[#00E5FF] transition-colors">THE MUSIC</a>
+                <a href="#venues" class="hover:text-[#FF1744] transition-colors">VENUES</a>
+            </div>
+            <a href="https://wa.me/16305509595" target="_blank" class="bg-green-600 text-white font-bold py-2 px-6 rounded-full hover:bg-green-500 transition-colors flex items-center gap-2 text-sm md:text-base">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                WhatsApp
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative min-h-screen flex items-center justify-center pt-24 px-6 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-blue-900/20 via-black to-black z-0"></div>
+        <div class="relative z-10 max-w-5xl mx-auto text-center">
+            <!-- Logo as Hero Image -->
+            <img src="logo.jpeg" alt="Rave Bingo Chicago Logo" class="max-w-md md:max-w-lg w-full mx-auto mb-8 drop-shadow-[0_0_30px_rgba(0,229,255,0.5)]">
+            
+            <div class="inline-block px-4 py-1 mb-6 border border-[#FF1744]/50 rounded-full bg-[#FF1744]/10 text-[#FF1744] text-sm font-bold tracking-widest uppercase">
+                Not Your Grandma's Bingo. Unless Grandma Rages.
+            </div>
+            <h1 class="font-display text-5xl md:text-7xl font-black mb-6 leading-none tracking-tight">
+                BINGO GOT A <br>
+                <span class="gradient-text">BEAT DROP.</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
+                Rave Bingo Chicago is an EDM-fueled music bingo party built for bars, nightlife, private events, fundraisers, Greek life, birthdays, corporate parties, and anyone who wants a reason to go out and actually do something.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#contact" class="bg-gradient-to-r from-[#00E5FF] to-blue-600 text-black font-bold py-4 px-10 rounded-full text-lg hover:scale-105 transition-transform shadow-lg shadow-[#00E5FF]/40">
+                    Book Rave Bingo
+                </a>
+                <a href="#venues" class="neon-border-red text-white font-bold py-4 px-10 rounded-full text-lg hover:bg-[#FF1744]/10 transition-colors">
+                    Bring It to My Bar
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- The One-Liner Banner -->
+    <section class="py-12 bg-gradient-to-r from-[#00E5FF]/10 to-[#FF1744]/10 border-y border-white/10">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p class="font-display text-3xl md:text-5xl font-bold italic text-white">
+                "Rave Bingo is what happens when music bingo pregames with a festival DJ."
+            </p>
+        </div>
+    </section>
+
+    <!-- What Is It? -->
+    <section id="what-is-it" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="font-display text-4xl md:text-6xl font-bold mb-4">It's Music Bingo. <span class="neon-red">With Club Energy.</span></h2>
+            <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+                Rave Bingo takes the familiar format of bingo and flips it into a live DJ-hosted party game. Players listen for songs, mark their cards, win prizes, yell at their friends, dance between rounds, and slowly realize they are way more competitive than they thought.
+            </p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="glass-card p-8 rounded-2xl hover:neon-border-cyan transition-all duration-300">
+                <div class="text-4xl mb-4">🎧</div>
+                <h3 class="font-display text-2xl font-bold text-[#00E5FF] mb-3">EDM + Throwback Bangers</h3>
+                <p class="text-gray-400">House, pop EDM, festival anthems, 2000s club tracks, guilty pleasures, and nostalgic singalong moments.</p>
+            </div>
+            <div class="glass-card p-8 rounded-2xl hover:neon-border-red transition-all duration-300">
+                <div class="text-4xl mb-4">⚡</div>
+                <h3 class="font-display text-2xl font-bold text-[#FF1744] mb-3">Bingo Without the Boring</h3>
+                <p class="text-gray-400">Fast rounds, crowd callouts, prize moments, mini-games, and hosted chaos. It starts as bingo. It turns into yelling, dancing, prize chasing, and pretending you knew the song before the drop.</p>
+            </div>
+            <div class="glass-card p-8 rounded-2xl hover:neon-border-cyan transition-all duration-300">
+                <div class="text-4xl mb-4">🍻</div>
+                <h3 class="font-display text-2xl font-bold text-[#00E5FF] mb-3">Built for Bars & Parties</h3>
+                <p class="text-gray-400">Perfect for venues that want more than trivia, more energy than karaoke, and a reason for groups to show up together.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who It's For -->
+    <section id="who-its-for" class="py-24 px-6 bg-white/5">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="font-display text-4xl md:text-5xl font-bold text-center mb-16">
+                Built for the People Who Say <span class="neon-cyan">"We Should Go Out More"</span>
+            </h2>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-black/40 p-6 rounded-xl border border-white/10 hover:border-[#00E5FF]/50 transition-colors">
+                    <h3 class="font-bold text-xl text-[#00E5FF] mb-2">🍻 Bars & Nightlife Venues</h3>
+                    <p class="text-gray-400 text-sm">A weekly or monthly event that brings party energy without needing a full club buildout.</p>
+                </div>
+                <div class="bg-black/40 p-6 rounded-xl border border-white/10 hover:border-[#FF1744]/50 transition-colors">
+                    <h3 class="font-bold text-xl text-[#FF1744] mb-2">🏛️ Greek Life & College Events</h3>
+                    <p class="text-gray-400 text-sm">Bro-friendly, sorority-friendly, competitive, social, loud, and easy to theme.</p>
+                </div>
+                <div class="bg-black/40 p-6 rounded-xl border border-white/10 hover:border-[#00E5FF]/50 transition-colors">
+                    <h3 class="font-bold text-xl text-[#00E5FF] mb-2">🥂 30s & 40s Night Out</h3>
+                    <p class="text-gray-400 text-sm">For the people who still love EDM, still want a fun night, but also appreciate seating and a bathroom line under 12 minutes.</p>
+                </div>
+                <div class="bg-black/40 p-6 rounded-xl border border-white/10 hover:border-[#FF1744]/50 transition-colors">
+                    <h3 class="font-bold text-xl text-[#FF1744] mb-2">🎂 Birthdays & Private Parties</h3>
+                    <p class="text-gray-400 text-sm">A full hosted experience where people don't just stand around asking where the snacks are.</p>
+                </div>
+                <div class="bg-black/40 p-6 rounded-xl border border-white/10 hover:border-[#00E5FF]/50 transition-colors sm:col-span-2 lg:col-span-2">
+                    <h3 class="font-bold text-xl text-[#00E5FF] mb-2">💰 Fundraisers & Social Events</h3>
+                    <p class="text-gray-400 text-sm">Easy to add raffles, sponsor prizes, donation rounds, and group competition.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Music Angle -->
+    <section id="music" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="font-display text-4xl md:text-5xl font-bold mb-4">Festival Energy. <span class="neon-red">Bar Night Format.</span></h2>
+            <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+                The soundtrack can be built around your crowd. EDM-heavy, throwback club, pop dance, festival anthems, college party tracks, 2010s bangers, or themed nights.
+            </p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
+            <span class="px-6 py-3 rounded-full bg-[#00E5FF]/10 border border-[#00E5FF]/30 text-[#00E5FF] font-bold">EDM Anthems</span>
+            <span class="px-6 py-3 rounded-full bg-[#FF1744]/10 border border-[#FF1744]/30 text-[#FF1744] font-bold">Brochella Bingo</span>
+            <span class="px-6 py-3 rounded-full bg-[#00E5FF]/10 border border-[#00E5FF]/30 text-[#00E5FF] font-bold">Sorority House Party Bingo</span>
+            <span class="px-6 py-3 rounded-full bg-[#FF1744]/10 border border-[#FF1744]/30 text-[#FF1744] font-bold">2010s Club Bangers</span>
+            <span class="px-6 py-3 rounded-full bg-[#00E5FF]/10 border border-[#00E5FF]/30 text-[#00E5FF] font-bold">Vegas Pool Party Bingo</span>
+            <span class="px-6 py-3 rounded-full bg-[#FF1744]/10 border border-[#FF1744]/30 text-[#FF1744] font-bold">Spring Break Bingo</span>
+            <span class="px-6 py-3 rounded-full bg-[#00E5FF]/10 border border-[#00E5FF]/30 text-[#00E5FF] font-bold">White Claw & Glow Sticks Night</span>
+            <span class="px-6 py-3 rounded-full bg-[#FF1744]/10 border border-[#FF1744]/30 text-[#FF1744] font-bold">Big Bootie Mix Bingo</span>
+            <span class="px-6 py-3 rounded-full bg-[#00E5FF]/10 border border-[#00E5FF]/30 text-[#00E5FF] font-bold">Emo EDM Remix Night</span>
+            <span class="px-6 py-3 rounded-full bg-[#FF1744]/10 border border-[#FF1744]/30 text-[#FF1744] font-bold">Ladies Night Rave Bingo</span>
+            <span class="px-6 py-3 rounded-full bg-[#00E5FF]/10 border border-[#00E5FF]/30 text-[#00E5FF] font-bold">Birthday Banger Bingo</span>
+        </div>
+        <p class="text-center text-gray-500 mt-8 italic">That's the sauce. You're not just selling bingo. You're selling themeable nightlife programming.</p>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-24 px-6 bg-gradient-to-b from-black to-[#00E5FF]/10">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="font-display text-4xl md:text-5xl font-bold text-center mb-16">How Rave Bingo Works</h2>
+            <div class="grid md:grid-cols-4 gap-8 mb-16">
+                <div class="text-center">
+                    <div class="text-6xl font-display font-black text-white/10 mb-4">01</div>
+                    <h3 class="text-xl font-bold text-[#00E5FF] mb-2">Grab a Card</h3>
+                    <p class="text-gray-400 text-sm">Everyone gets a music bingo card.</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-6xl font-display font-black text-white/10 mb-4">02</div>
+                    <h3 class="text-xl font-bold text-[#FF1744] mb-2">Hear the Track</h3>
+                    <p class="text-gray-400 text-sm">The DJ/host plays clips, drops, hooks, and bangers.</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-6xl font-display font-black text-white/10 mb-4">03</div>
+                    <h3 class="text-xl font-bold text-[#00E5FF] mb-2">Mark the Song</h3>
+                    <p class="text-gray-400 text-sm">If it's on your card, mark it.</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-6xl font-display font-black text-white/10 mb-4">04</div>
+                    <h3 class="text-xl font-bold text-[#FF1744] mb-2">Win, Dance, Repeat</h3>
+                    <p class="text-gray-400 text-sm">Winners get prizes. Everyone else gets another drink and claims they were "one away."</p>
+                </div>
+            </div>
+            
+            <div class="glass-card p-8 rounded-2xl border border-white/10">
+                <h3 class="font-display text-2xl font-bold text-center mb-6">Between-Round Chaos:</h3>
+                <div class="marquee-container">
+                    <div class="marquee-content text-lg font-bold text-gray-300">
+                        DANCE-OFFS &nbsp;•&nbsp; CHUG-FREE DRINKING GAMES &nbsp;•&nbsp; CROWD CHANTS &nbsp;•&nbsp; TEAM COMPETITIONS &nbsp;•&nbsp; BIRTHDAY CALLOUTS &nbsp;•&nbsp; PRIZE TOSSES &nbsp;•&nbsp; GLOW CHALLENGES &nbsp;•&nbsp; "FINISH THE LYRIC" MOMENTS &nbsp;•&nbsp; MINI LIGHTNING ROUNDS &nbsp;•&nbsp; 
+                        DANCE-OFFS &nbsp;•&nbsp; CHUG-FREE DRINKING GAMES &nbsp;•&nbsp; CROWD CHANTS &nbsp;•&nbsp; TEAM COMPETITIONS &nbsp;•&nbsp; BIRTHDAY CALLOUTS &nbsp;•&nbsp; PRIZE TOSSES &nbsp;•&nbsp; GLOW CHALLENGES &nbsp;•&nbsp; "FINISH THE LYRIC" MOMENTS &nbsp;•&nbsp; MINI LIGHTNING ROUNDS &nbsp;•&nbsp;
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Venue Sales Section -->
+    <section id="venues" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="font-display text-4xl md:text-5xl font-bold mb-6">
+                    Give Your Bar a Night People <span class="neon-cyan">Actually Text Their Friends About</span>
+                </h2>
+                <p class="text-xl text-gray-300 mb-8">
+                    Rave Bingo Chicago is built for venues that want a social, high-energy event night that feels fresh but is easy for guests to understand. It is less passive than a DJ, more party-forward than trivia, and easier for groups to jump into than karaoke.
+                </p>
+                <ul class="space-y-4 mb-10">
+                    <li class="flex items-start"><span class="text-[#00E5FF] mr-3 mt-1">▹</span> Creates a reason to come early and stay longer</li>
+                    <li class="flex items-start"><span class="text-[#00E5FF] mr-3 mt-1">▹</span> Works on slower weeknights or special event nights</li>
+                    <li class="flex items-start"><span class="text-[#00E5FF] mr-3 mt-1">▹</span> Easy to promote with themed flyers</li>
+                    <li class="flex items-start"><span class="text-[#00E5FF] mr-3 mt-1">▹</span> Great for birthdays and group reservations</li>
+                    <li class="flex items-start"><span class="text-[#00E5FF] mr-3 mt-1">▹</span> Built-in prize and sponsor opportunities</li>
+                    <li class="flex items-start"><span class="text-[#00E5FF] mr-3 mt-1">▹</span> Strong photo/video/social content potential</li>
+                    <li class="flex items-start"><span class="text-[#00E5FF] mr-3 mt-1">▹</span> Can run monthly, weekly, or as a one-off</li>
+                </ul>
+                <a href="#contact" class="inline-block bg-[#00E5FF] text-black font-bold py-4 px-8 rounded-full hover:bg-[#00b8cc] transition-colors">
+                    Bring Rave Bingo to My Venue
+                </a>
+            </div>
+            <div class="glass-card p-8 rounded-2xl neon-border-red">
+                <h3 class="font-display text-3xl font-bold mb-4 text-[#FF1744]">Private Parties That Don't Feel Like Corporate Icebreakers</h3>
+                <p class="text-gray-300 mb-6">
+                    Whether it's a birthday, bachelorette-adjacent party, reunion, corporate happy hour, alumni event, or "we just need a reason to get everyone out," Rave Bingo gives the night structure without killing the vibe.
+                </p>
+                <a href="#contact" class="inline-block border border-[#FF1744] text-[#FF1744] font-bold py-3 px-6 rounded-full hover:bg-[#FF1744] hover:text-white transition-colors">
+                    Book a Private Party
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pilot / Footage Section -->
+    <section class="py-24 px-6 bg-gradient-to-t from-black to-[#FF1744]/10">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="font-display text-4xl md:text-5xl font-bold mb-6">
+                Want to Be One of the <span class="neon-cyan">First Official</span> Rave Bingo Chicago Events?
+            </h2>
+            <p class="text-xl text-gray-300 mb-8">
+                We're currently building the official Rave Bingo Chicago promo reel and booking a limited number of pilot events with preferred pricing. Selected events may receive discounted booking rates in exchange for allowing photo and video capture for future promotion.
+            </p>
+            <div class="flex flex-wrap justify-center gap-3 mb-10 text-sm font-semibold">
+                <span class="px-4 py-2 bg-[#00E5FF]/10 border border-[#00E5FF]/30 text-[#00E5FF] rounded-full">Bars</span>
+                <span class="px-4 py-2 bg-[#FF1744]/10 border border-[#FF1744]/30 text-[#FF1744] rounded-full">College / Greek Life</span>
+                <span class="px-4 py-2 bg-[#00E5FF]/10 border border-[#00E5FF]/30 text-[#00E5FF] rounded-full">Birthday Groups</span>
+                <span class="px-4 py-2 bg-[#FF1744]/10 border border-[#FF1744]/30 text-[#FF1744] rounded-full">Alumni Parties</span>
+                <span class="px-4 py-2 bg-[#00E5FF]/10 border border-[#00E5FF]/30 text-[#00E5FF] rounded-full">Fundraisers</span>
+                <span class="px-4 py-2 bg-[#FF1744]/10 border border-[#FF1744]/30 text-[#FF1744] rounded-full">Singles Mixers</span>
+                <span class="px-4 py-2 bg-[#00E5FF]/10 border border-[#00E5FF]/30 text-[#00E5FF] rounded-full">DJ Nights</span>
+                <span class="px-4 py-2 bg-[#FF1744]/10 border border-[#FF1744]/30 text-[#FF1744] rounded-full">Brunch-to-Nightlife</span>
+            </div>
+            <a href="#contact" class="inline-block bg-gradient-to-r from-[#FF1744] to-red-700 text-white font-bold py-4 px-10 rounded-full hover:scale-105 transition-transform shadow-lg shadow-[#FF1744]/40">
+                Ask About Pilot Pricing
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact / Footer -->
+    <footer id="contact" class="py-20 px-6 border-t border-white/10 bg-black">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="font-display text-5xl md:text-7xl font-black mb-8 gradient-text">
+                LET'S MAKE SOME NOISE.
+            </h2>
+            <p class="text-xl text-gray-400 mb-10">
+                Ready to book? Want to bring this to your venue? Hit us up. We'll handle the cards, the DJ, the lights, and the chaos. You just bring the crowd.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-6 mb-16">
+                <a href="https://wa.me/16305509595" target="_blank" class="bg-green-600 text-white font-bold py-4 px-10 rounded-full text-lg hover:bg-green-500 transition-colors flex items-center justify-center gap-2">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                    WhatsApp: +1 (630) 550-9595
+                </a>
+                <a href="mailto:bookings@ravebingochi.com" class="bg-[#00E5FF] text-black font-bold py-4 px-10 rounded-full text-lg hover:bg-[#00b8cc] transition-colors">
+                    Email Us to Book
+                </a>
+            </div>
+            <div class="text-gray-600 text-sm">
+                <p>&copy; 2024 Rave Bingo Chicago. All rights reserved.</p>
+                <p class="mt-2 italic">"It starts as bingo. It turns into yelling, dancing, prize chasing, and pretending you knew the song before the drop."</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
