@@ -4,5 +4,9 @@
   "compatibility_date": "2025-01-01",
   "assets": {
     "directory": "./output"
-  }
+  },
+  "routes": [
+    { "pattern": "ravebingochi.com", "custom_domain": true },
+    { "pattern": "www.ravebingochi.com", "custom_domain": true }
+  ]
 }
