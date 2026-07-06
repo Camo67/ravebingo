@@ -42,20 +42,8 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        .marquee-container {
-            overflow: hidden;
-            white-space: nowrap;
-        }
-        .marquee-content {
-            display: inline-block;
-            animation: marquee 20s linear infinite;
-        }
-        @keyframes marquee {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-        }
         .grid-bg {
-            background-image: 
+            background-image:
                 linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
                 linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
             background-size: 40px 40px;
@@ -70,10 +58,10 @@
             <img src="logo.jpeg" alt="Rave Bingo Chicago Logo" class="h-16 md:h-20 w-auto object-contain">
             <div class="hidden md:flex gap-8 text-sm font-semibold tracking-wide">
                 <a href="#what-is-it" class="hover:text-[#00E5FF] transition-colors">WHAT TO EXPECT</a>
-                <a href="#how-prizes-work" class="hover:text-[#FF1744] transition-colors">PRIZES</a>
-                <a href="winners-circle.html" class="hover:text-[#00E5FF] transition-colors">WINNERS CIRCLE</a>
-                <a href="#who-its-for" class="hover:text-[#FF1744] transition-colors">PERFECT FOR</a>
-                <a href="#venues" class="hover:text-[#00E5FF] transition-colors">VENUES</a>
+                <a href="#party-upgrade" class="hover:text-[#FF1744] transition-colors">PARTY UPGRADE</a>
+                <a href="#how-prizes-work" class="hover:text-[#00E5FF] transition-colors">PRIZES</a>
+                <a href="winners-circle.html" class="hover:text-[#FF1744] transition-colors">WINNERS CIRCLE</a>
+                <a href="#who-its-for" class="hover:text-[#00E5FF] transition-colors">PERFECT FOR</a>
                 <a href="#faq" class="hover:text-[#FF1744] transition-colors">FAQ</a>
             </div>
             <a href="https://wa.me/16305509595" target="_blank" class="bg-green-600 text-white font-bold py-2 px-6 rounded-full hover:bg-green-500 transition-colors flex items-center gap-2 text-sm md:text-base">
@@ -89,341 +77,125 @@
         <div class="relative z-10 max-w-5xl mx-auto text-center">
             <!-- Logo as Hero Image -->
             <img src="logo.jpeg" alt="Rave Bingo Chicago Logo" class="max-w-md md:max-w-lg w-full mx-auto mb-8 drop-shadow-[0_0_30px_rgba(0,229,255,0.5)]">
-            
+
             <div class="inline-block px-4 py-1 mb-6 border border-[#FF1744]/50 rounded-full bg-[#FF1744]/10 text-[#FF1744] text-sm font-bold tracking-widest uppercase">
                 One Night. Every Party You Love.
             </div>
             <h1 class="font-display text-5xl md:text-7xl font-black mb-6 leading-none tracking-tight">
-                PART DJ. PART GAME SHOW. <br>
-                <span class="gradient-text">ALL ONE UNFORGETTABLE PARTY.</span>
+                RAVE BINGO <span class="gradient-text">CHICAGO</span>
             </h1>
-            <p class="text-xl md:text-2xl text-gray-300 mb-4 max-w-3xl mx-auto leading-relaxed">
-                Forget everything you think you know about bingo. Rave Bingo Chicago is an interactive entertainment show that combines the excitement of a live DJ, the fun of TV game shows, bonus bingo, music challenges, karaoke, dancing, giveaways, and audience participation into one incredible night.
+            <p class="text-2xl md:text-3xl font-bold text-white mb-6 max-w-4xl mx-auto leading-snug">
+                Part DJ. Part Game Show. Part Bonus Bingo. Part Name That Tune Music Bingo. Part Karaoke. ALL ONE UNFORGETTABLE PARTY!
+            </p>
+            <p class="text-lg md:text-xl text-gray-300 mb-4 max-w-3xl mx-auto leading-relaxed">
+                Forget everything you think you know about bingo.
+            </p>
+            <p class="text-lg md:text-xl text-gray-300 mb-4 max-w-3xl mx-auto leading-relaxed">
+                <strong class="text-white">Rave Bingo Chicago</strong> is a high-energy interactive entertainment experience that combines the excitement of a live DJ, the fun of TV game shows, the thrill of bonus bingo, music challenges, karaoke, dancing, giveaways, and audience participation into one incredible night.
             </p>
             <p class="text-lg md:text-xl text-gray-400 mb-10 max-w-3xl mx-auto leading-relaxed">
-                Whether you're celebrating with friends, looking for the best date night, or just ready to let loose — every show is different, and every night creates new winners. Your ticket is your admission to the show — the entertainment experience itself.
+                Whether you're celebrating with friends, looking for the best date night, or just ready to let loose, every show is different and every night creates new winners.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
                 <a href="#contact" class="bg-gradient-to-r from-[#00E5FF] to-blue-600 text-black font-bold py-4 px-10 rounded-full text-lg hover:scale-105 transition-transform shadow-lg shadow-[#00E5FF]/40">
                     Book Rave Bingo
                 </a>
-                <a href="#venues" class="neon-border-red text-white font-bold py-4 px-10 rounded-full text-lg hover:bg-[#FF1744]/10 transition-colors">
-                    Bring It to My Bar
+                <a href="winners-circle.html" class="neon-border-red text-white font-bold py-4 px-10 rounded-full text-lg hover:bg-[#FF1744]/10 transition-colors">
+                    Join the Winner's Circle Free
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- The One-Liner Banner -->
-    <section class="py-12 bg-gradient-to-r from-[#00E5FF]/10 to-[#FF1744]/10 border-y border-white/10">
-        <div class="max-w-6xl mx-auto px-6 text-center">
-            <p class="font-display text-3xl md:text-5xl font-bold italic text-white">
-                "It's a concert. It's a party. It's a game show. It's a night out you'll actually remember."
-            </p>
-        </div>
-    </section>
-
     <!-- What to Expect -->
     <section id="what-is-it" class="py-24 px-6 max-w-7xl mx-auto">
-        <div class="text-center mb-16">
-            <h2 class="font-display text-4xl md:text-6xl font-bold mb-4">What to <span class="neon-red">Expect</span></h2>
-            <p class="text-xl text-gray-400 max-w-3xl mx-auto">
-                No two shows are exactly alike. Every event features a unique mix of games, music, surprises, and audience interaction.
-            </p>
+        <h2 class="font-display text-4xl md:text-6xl font-bold text-center mb-16">What to <span class="neon-red">Expect</span></h2>
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <div class="glass-card p-6 rounded-2xl text-lg"><span class="mr-2">🎧</span> Live DJ spinning today's hits, throwbacks and sing-along anthems</div>
+            <div class="glass-card p-6 rounded-2xl text-lg"><span class="mr-2">🎤</span> Crowd Karaoke &amp; Massive Sing-Alongs</div>
+            <div class="glass-card p-6 rounded-2xl text-lg"><span class="mr-2">🎵</span> Name That Tune Music Bingo</div>
+            <div class="glass-card p-6 rounded-2xl text-lg"><span class="mr-2">🎲</span> Bonus Bingo Rounds</div>
+            <div class="glass-card p-6 rounded-2xl text-lg"><span class="mr-2">🎮</span> Interactive Game Show Challenges</div>
+            <div class="glass-card p-6 rounded-2xl text-lg"><span class="mr-2">🧠</span> Trivia Battles</div>
+            <div class="glass-card p-6 rounded-2xl text-lg"><span class="mr-2">⚡</span> Minute-to-Win-It Competitions</div>
+            <div class="glass-card p-6 rounded-2xl text-lg"><span class="mr-2">👨‍👩‍👧</span> Family Feud Style Games</div>
+            <div class="glass-card p-6 rounded-2xl text-lg"><span class="mr-2">💃</span> Dance-Offs &amp; Crowd Challenges</div>
+            <div class="glass-card p-6 rounded-2xl text-lg"><span class="mr-2">🎁</span> Huge Giveaways &amp; Surprise Prizes</div>
+            <div class="glass-card p-6 rounded-2xl text-lg sm:col-span-2 md:col-span-1"><span class="mr-2">🌴</span> Seasonal Grand Prizes including Vacation Stays and Premium Experiences</div>
         </div>
-        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
-            <div class="glass-card p-6 rounded-2xl hover:neon-border-cyan transition-all duration-300">
-                <div class="text-3xl mb-2">🎧</div>
-                <h3 class="font-bold text-lg text-[#00E5FF]">Live DJ</h3>
-                <p class="text-gray-400 text-sm">Today's hits, throwbacks, and sing-along anthems.</p>
-            </div>
-            <div class="glass-card p-6 rounded-2xl hover:neon-border-red transition-all duration-300">
-                <div class="text-3xl mb-2">🎤</div>
-                <h3 class="font-bold text-lg text-[#FF1744]">Crowd Karaoke</h3>
-                <p class="text-gray-400 text-sm">Massive sing-alongs, no talent required.</p>
-            </div>
-            <div class="glass-card p-6 rounded-2xl hover:neon-border-cyan transition-all duration-300">
-                <div class="text-3xl mb-2">🎵</div>
-                <h3 class="font-bold text-lg text-[#00E5FF]">Name That Tune Music Bingo</h3>
-                <p class="text-gray-400 text-sm">Mark your card as the DJ drops the track.</p>
-            </div>
-            <div class="glass-card p-6 rounded-2xl hover:neon-border-red transition-all duration-300">
-                <div class="text-3xl mb-2">🎲</div>
-                <h3 class="font-bold text-lg text-[#FF1744]">Bonus Bingo Rounds</h3>
-                <p class="text-gray-400 text-sm">Extra rounds, extra chances to play along.</p>
-            </div>
-            <div class="glass-card p-6 rounded-2xl hover:neon-border-cyan transition-all duration-300">
-                <div class="text-3xl mb-2">🎮</div>
-                <h3 class="font-bold text-lg text-[#00E5FF]">Interactive Game Show Challenges</h3>
-                <p class="text-gray-400 text-sm">Skill-based stage games with real rules and scoring.</p>
-            </div>
-            <div class="glass-card p-6 rounded-2xl hover:neon-border-red transition-all duration-300">
-                <div class="text-3xl mb-2">🧠</div>
-                <h3 class="font-bold text-lg text-[#FF1744]">Trivia Battles</h3>
-                <p class="text-gray-400 text-sm">Test your crowd's knowledge for bragging rights.</p>
-            </div>
-            <div class="glass-card p-6 rounded-2xl hover:neon-border-cyan transition-all duration-300">
-                <div class="text-3xl mb-2">⚡</div>
-                <h3 class="font-bold text-lg text-[#00E5FF]">Minute-to-Win-It Competitions</h3>
-                <p class="text-gray-400 text-sm">Fast, fun, and ridiculous on-the-clock challenges.</p>
-            </div>
-            <div class="glass-card p-6 rounded-2xl hover:neon-border-red transition-all duration-300">
-                <div class="text-3xl mb-2">👨‍👩‍👧</div>
-                <h3 class="font-bold text-lg text-[#FF1744]">Family Feud Style Games</h3>
-                <p class="text-gray-400 text-sm">Team up and go head-to-head with the crowd.</p>
-            </div>
-            <div class="glass-card p-6 rounded-2xl hover:neon-border-cyan transition-all duration-300">
-                <div class="text-3xl mb-2">💃</div>
-                <h3 class="font-bold text-lg text-[#00E5FF]">Dance-Offs & Crowd Challenges</h3>
-                <p class="text-gray-400 text-sm">Because someone always thinks they've got moves.</p>
-            </div>
-            <div class="glass-card p-6 rounded-2xl hover:neon-border-red transition-all duration-300 sm:col-span-2 md:col-span-1">
-                <div class="text-3xl mb-2">🎁</div>
-                <h3 class="font-bold text-lg text-[#FF1744]">Huge Giveaways & Surprise Prizes</h3>
-                <p class="text-gray-400 text-sm">Promotional prizes throughout the night.</p>
-            </div>
-            <div class="glass-card p-6 rounded-2xl border border-purple-500/50 sm:col-span-2 md:col-span-2" style="box-shadow: 0 0 15px rgba(168, 85, 247, 0.2);">
-                <div class="text-3xl mb-2">🌴</div>
-                <h3 class="font-bold text-lg text-purple-400">Seasonal Grand Prizes — Vacation Stays &amp; Premium Experiences</h3>
-                <p class="text-gray-400 text-sm">Our purple Vacation Bingo giveaway is a free, no-purchase-necessary sweepstakes. <a href="#how-prizes-work" class="text-[#00E5FF] hover:underline">See how prizes work →</a></p>
-            </div>
+        <p class="text-center text-xl text-gray-400 max-w-3xl mx-auto mt-16">
+            No two shows are exactly alike. Every event features a unique mix of games, music, surprises and audience interaction.
+        </p>
+    </section>
+
+    <!-- The Optional Party Upgrade -->
+    <section id="party-upgrade" class="py-24 px-6 max-w-4xl mx-auto text-center">
+        <h2 class="font-display text-4xl md:text-5xl font-bold mb-8">The Optional <span class="neon-cyan">Party Upgrade</span></h2>
+        <p class="text-xl text-gray-300 mb-6">Want to level up your night?</p>
+        <p class="text-xl text-gray-300 mb-6">
+            Our optional <strong class="text-white">Party Upgrade Package</strong> unlocks even more ways to get involved with exclusive bonus game opportunities, enhanced prize experiences, collectible game materials and additional interactive challenges throughout the show.
+        </p>
+        <p class="text-xl text-gray-300">
+            Every upgrade helps us continue adding bigger experiences, larger giveaways and even more incredible prizes throughout the season.
+        </p>
+    </section>
+
+    <!-- Winner's Circle -->
+    <section class="py-24 px-6 bg-gradient-to-r from-purple-900/20 via-black to-[#00E5FF]/10 border-y border-white/10">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="font-display text-4xl md:text-5xl font-bold mb-8">Winner's <span class="gradient-text">Circle</span></h2>
+            <p class="text-xl text-gray-300 mb-6">Every winner has a story.</p>
+            <p class="text-xl text-gray-300">
+                Visit our <a href="winners-circle.html" class="text-purple-400 font-bold hover:underline">Winner's Circle</a> to see past winners, photos, prize highlights, upcoming grand prizes and official event rules. You'll also find our free participation information and everything you need to know before attending your first show.
+            </p>
         </div>
     </section>
 
     <!-- Perfect For -->
-    <section id="who-its-for" class="py-24 px-6 bg-white/5">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="font-display text-4xl md:text-5xl font-bold text-center mb-4">
-                Perfect <span class="neon-cyan">For</span>
-            </h2>
-            <p class="text-xl text-gray-400 max-w-3xl mx-auto text-center mb-16">More than bingo. It's a concert, a party, and a game show — built to fit almost any night.</p>
-            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="bg-black/40 p-6 rounded-xl border border-white/10 hover:border-[#00E5FF]/50 transition-colors">
-                    <h3 class="font-bold text-xl text-[#00E5FF] mb-2">🍻 Bars & Restaurants</h3>
-                    <p class="text-gray-400 text-sm">A weekly or monthly event that brings party energy without needing a full club buildout.</p>
-                </div>
-                <div class="bg-black/40 p-6 rounded-xl border border-white/10 hover:border-[#FF1744]/50 transition-colors">
-                    <h3 class="font-bold text-xl text-[#FF1744] mb-2">🎂 Birthday Parties</h3>
-                    <p class="text-gray-400 text-sm">A full hosted experience where people don't just stand around asking where the snacks are.</p>
-                </div>
-                <div class="bg-black/40 p-6 rounded-xl border border-white/10 hover:border-[#00E5FF]/50 transition-colors">
-                    <h3 class="font-bold text-xl text-[#00E5FF] mb-2">💼 Corporate Events</h3>
-                    <p class="text-gray-400 text-sm">A team night out that doesn't feel like a corporate icebreaker.</p>
-                </div>
-                <div class="bg-black/40 p-6 rounded-xl border border-white/10 hover:border-[#FF1744]/50 transition-colors">
-                    <h3 class="font-bold text-xl text-[#FF1744] mb-2">💰 Fundraisers</h3>
-                    <p class="text-gray-400 text-sm">Easy to add promotional giveaways, sponsor prizes, donation rounds, and group competition.</p>
-                </div>
-                <div class="bg-black/40 p-6 rounded-xl border border-white/10 hover:border-[#00E5FF]/50 transition-colors">
-                    <h3 class="font-bold text-xl text-[#00E5FF] mb-2">🏛️ Colleges & Universities</h3>
-                    <p class="text-gray-400 text-sm">Bro-friendly, sorority-friendly, competitive, social, loud, and easy to theme.</p>
-                </div>
-                <div class="bg-black/40 p-6 rounded-xl border border-white/10 hover:border-[#FF1744]/50 transition-colors">
-                    <h3 class="font-bold text-xl text-[#FF1744] mb-2">🎪 Festivals</h3>
-                    <p class="text-gray-400 text-sm">Big-crowd energy with a hosted, interactive format.</p>
-                </div>
-                <div class="bg-black/40 p-6 rounded-xl border border-white/10 hover:border-[#00E5FF]/50 transition-colors">
-                    <h3 class="font-bold text-xl text-[#00E5FF] mb-2">🥂 Private Parties</h3>
-                    <p class="text-gray-400 text-sm">Whether it's a reunion, happy hour, or "we just need a reason to get everyone out."</p>
-                </div>
-                <div class="bg-black/40 p-6 rounded-xl border border-white/10 hover:border-[#FF1744]/50 transition-colors">
-                    <h3 class="font-bold text-xl text-[#FF1744] mb-2">🎄 Holiday Events</h3>
-                    <p class="text-gray-400 text-sm">Themeable for any season, any holiday, any crowd.</p>
-                </div>
-            </div>
+    <section id="who-its-for" class="py-24 px-6 max-w-5xl mx-auto">
+        <h2 class="font-display text-4xl md:text-5xl font-bold text-center mb-16">Perfect <span class="neon-red">For</span></h2>
+        <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-4 text-center">
+            <div class="glass-card p-6 rounded-xl text-lg font-semibold">Bars &amp; Restaurants</div>
+            <div class="glass-card p-6 rounded-xl text-lg font-semibold">Birthday Parties</div>
+            <div class="glass-card p-6 rounded-xl text-lg font-semibold">Corporate Events</div>
+            <div class="glass-card p-6 rounded-xl text-lg font-semibold">Fundraisers</div>
+            <div class="glass-card p-6 rounded-xl text-lg font-semibold">Colleges &amp; Universities</div>
+            <div class="glass-card p-6 rounded-xl text-lg font-semibold">Festivals</div>
+            <div class="glass-card p-6 rounded-xl text-lg font-semibold">Private Parties</div>
+            <div class="glass-card p-6 rounded-xl text-lg font-semibold">Holiday Events</div>
         </div>
     </section>
 
-    <!-- The Music Angle -->
-    <section id="music" class="py-24 px-6 max-w-7xl mx-auto">
-        <div class="text-center mb-12">
-            <h2 class="font-display text-4xl md:text-5xl font-bold mb-4">Festival Energy. <span class="neon-red">Bar Night Format.</span></h2>
-            <p class="text-xl text-gray-400 max-w-3xl mx-auto">
-                The soundtrack can be built around your crowd. EDM-heavy, throwback club, pop dance, festival anthems, college party tracks, 2010s bangers, or themed nights.
+    <!-- More Than Bingo -->
+    <section class="py-24 px-6 bg-gradient-to-b from-black via-purple-900/10 to-black text-center">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="font-display text-3xl md:text-4xl font-bold mb-8">More Than Bingo.</h2>
+            <p class="font-display text-2xl md:text-4xl font-bold text-gray-300 leading-relaxed">
+                It's a concert.<br>
+                It's a party.<br>
+                It's a game show.<br>
+                It's a night out you'll actually remember.
             </p>
-        </div>
-        <div class="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
-            <span class="px-6 py-3 rounded-full bg-[#00E5FF]/10 border border-[#00E5FF]/30 text-[#00E5FF] font-bold">EDM Anthems</span>
-            <span class="px-6 py-3 rounded-full bg-[#FF1744]/10 border border-[#FF1744]/30 text-[#FF1744] font-bold">Brochella Bingo</span>
-            <span class="px-6 py-3 rounded-full bg-[#00E5FF]/10 border border-[#00E5FF]/30 text-[#00E5FF] font-bold">Sorority House Party Bingo</span>
-            <span class="px-6 py-3 rounded-full bg-[#FF1744]/10 border border-[#FF1744]/30 text-[#FF1744] font-bold">2010s Club Bangers</span>
-            <span class="px-6 py-3 rounded-full bg-[#00E5FF]/10 border border-[#00E5FF]/30 text-[#00E5FF] font-bold">Vegas Pool Party Bingo</span>
-            <span class="px-6 py-3 rounded-full bg-[#FF1744]/10 border border-[#FF1744]/30 text-[#FF1744] font-bold">Spring Break Bingo</span>
-            <span class="px-6 py-3 rounded-full bg-[#00E5FF]/10 border border-[#00E5FF]/30 text-[#00E5FF] font-bold">White Claw & Glow Sticks Night</span>
-            <span class="px-6 py-3 rounded-full bg-[#FF1744]/10 border border-[#FF1744]/30 text-[#FF1744] font-bold">Big Bootie Mix Bingo</span>
-            <span class="px-6 py-3 rounded-full bg-[#00E5FF]/10 border border-[#00E5FF]/30 text-[#00E5FF] font-bold">Emo EDM Remix Night</span>
-            <span class="px-6 py-3 rounded-full bg-[#FF1744]/10 border border-[#FF1744]/30 text-[#FF1744] font-bold">Ladies Night Rave Bingo</span>
-            <span class="px-6 py-3 rounded-full bg-[#00E5FF]/10 border border-[#00E5FF]/30 text-[#00E5FF] font-bold">Birthday Banger Bingo</span>
-        </div>
-        <p class="text-center text-gray-500 mt-8 italic">That's the sauce. You're not just selling bingo. You're selling themeable nightlife programming.</p>
-    </section>
-
-    <!-- How It Works -->
-    <section class="py-24 px-6 bg-gradient-to-b from-black to-[#00E5FF]/10">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="font-display text-4xl md:text-5xl font-bold text-center mb-16">How Rave Bingo Works</h2>
-            <div class="grid md:grid-cols-4 gap-8 mb-16">
-                <div class="text-center">
-                    <div class="text-6xl font-display font-black text-white/10 mb-4">01</div>
-                    <h3 class="text-xl font-bold text-[#00E5FF] mb-2">Grab a Card</h3>
-                    <p class="text-gray-400 text-sm">Everyone gets a music bingo card.</p>
-                </div>
-                <div class="text-center">
-                    <div class="text-6xl font-display font-black text-white/10 mb-4">02</div>
-                    <h3 class="text-xl font-bold text-[#FF1744] mb-2">Hear the Track</h3>
-                    <p class="text-gray-400 text-sm">The DJ/host plays clips, drops, hooks, and bangers.</p>
-                </div>
-                <div class="text-center">
-                    <div class="text-6xl font-display font-black text-white/10 mb-4">03</div>
-                    <h3 class="text-xl font-bold text-[#00E5FF] mb-2">Mark the Song</h3>
-                    <p class="text-gray-400 text-sm">If it's on your card, mark it.</p>
-                </div>
-                <div class="text-center">
-                    <div class="text-6xl font-display font-black text-white/10 mb-4">04</div>
-                    <h3 class="text-xl font-bold text-[#FF1744] mb-2">Win, Dance, Repeat</h3>
-                    <p class="text-gray-400 text-sm">Round winners get promotional prizes. Everyone else gets another drink and claims they were "one away."</p>
-                </div>
-            </div>
-            
-            <div class="glass-card p-8 rounded-2xl border border-white/10">
-                <h3 class="font-display text-2xl font-bold text-center mb-6">Between-Round Chaos:</h3>
-                <div class="marquee-container">
-                    <div class="marquee-content text-lg font-bold text-gray-300">
-                        DANCE-OFFS &nbsp;•&nbsp; CHUG-FREE DRINKING GAMES &nbsp;•&nbsp; CROWD CHANTS &nbsp;•&nbsp; TEAM COMPETITIONS &nbsp;•&nbsp; BIRTHDAY CALLOUTS &nbsp;•&nbsp; PRIZE TOSSES &nbsp;•&nbsp; GLOW CHALLENGES &nbsp;•&nbsp; "FINISH THE LYRIC" MOMENTS &nbsp;•&nbsp; MINI LIGHTNING ROUNDS &nbsp;•&nbsp; 
-                        DANCE-OFFS &nbsp;•&nbsp; CHUG-FREE DRINKING GAMES &nbsp;•&nbsp; CROWD CHANTS &nbsp;•&nbsp; TEAM COMPETITIONS &nbsp;•&nbsp; BIRTHDAY CALLOUTS &nbsp;•&nbsp; PRIZE TOSSES &nbsp;•&nbsp; GLOW CHALLENGES &nbsp;•&nbsp; "FINISH THE LYRIC" MOMENTS &nbsp;•&nbsp; MINI LIGHTNING ROUNDS &nbsp;•&nbsp;
-                    </div>
-                </div>
-            </div>
+            <p class="font-display text-3xl md:text-5xl font-black gradient-text mt-8">
+                Welcome to Rave Bingo Chicago.
+            </p>
         </div>
     </section>
 
-    <!-- How Prizes Work -->
-    <section id="how-prizes-work" class="py-24 px-6 max-w-7xl mx-auto">
-        <div class="text-center mb-12">
-            <h2 class="font-display text-4xl md:text-5xl font-bold mb-4">How <span class="neon-cyan">Prizes</span> Work</h2>
-            <p class="text-xl text-gray-400 max-w-3xl mx-auto">
-                Rave Bingo is a ticketed interactive entertainment show — not gambling and not paid bingo-for-cash. Your ticket buys the entertainment experience: the DJ, the host, the rounds, the chaos. Prizes come in three clearly separated lanes.
-            </p>
-        </div>
-        <div class="grid md:grid-cols-3 gap-8 mb-12">
-            <div class="glass-card p-8 rounded-2xl border border-purple-500/50" style="box-shadow: 0 0 15px rgba(168, 85, 247, 0.3);">
-                <div class="text-4xl mb-4">🏝️</div>
-                <h3 class="font-display text-2xl font-bold text-purple-400 mb-3">Purple Vacation Bingo — Always Free</h3>
-                <p class="text-gray-400 text-sm mb-3">Our featured vacation giveaway runs as a free, no-purchase-necessary sweepstakes. Every eligible guest receives <strong class="text-white">one free purple Vacation Bingo card</strong>. Purple cards are never sold, and there are no paid extras, upgrades, or add-ons for this game.</p>
-                <p class="text-gray-500 text-xs">Buying a ticket, a Party Upgrade Package, drinks, or anything else does not improve your chances. A free entry route is also available through the WINNERS CIRCLE.</p>
-            </div>
-            <div class="glass-card p-8 rounded-2xl hover:neon-border-cyan transition-all duration-300">
-                <div class="text-4xl mb-4">🎤</div>
-                <h3 class="font-display text-2xl font-bold text-[#00E5FF] mb-3">Stage Games — Won by Skill</h3>
-                <p class="text-gray-400 text-sm mb-3">Stage-game prizes are won through actual skill challenges — trivia, dance-offs, lyric battles, and other contests with rules and scoring announced before each game. Winners are determined by performance, scoring, or judging, never by chance.</p>
-                <p class="text-gray-500 text-xs">Contestants can be selected from free WINNERS CIRCLE applications, volunteers, host and audience participation, skill qualifiers, and Party Upgrade Package qualifiers.</p>
-            </div>
-            <div class="glass-card p-8 rounded-2xl hover:neon-border-red transition-all duration-300">
-                <div class="text-4xl mb-4">🎁</div>
-                <h3 class="font-display text-2xl font-bold text-[#FF1744] mb-3">Bingo-Round Giveaways — Just for Fun</h3>
-                <p class="text-gray-400 text-sm mb-3">Music-bingo round prizes are small, promotional, fun items — merch, sponsor swag, drink vouchers, bragging rights. They're played on cards included with the show or on free cards, separate from any purchase.</p>
-                <p class="text-gray-500 text-xs">The optional Party Upgrade Package is a gameplay add-on for extra entertainment rounds only. It cannot win and does not affect the purple Vacation Bingo prize.</p>
-            </div>
-        </div>
-        <div class="glass-card p-8 rounded-2xl border border-white/10 max-w-4xl mx-auto mb-12">
-            <h3 class="font-display text-2xl font-bold mb-3 text-center">The Optional Party Upgrade Package</h3>
-            <p class="text-gray-400 text-sm text-center mb-3">
-                Want to level up your night? Our optional Party Upgrade Package unlocks more ways to get involved — extra bonus game opportunities, enhanced prize experiences, collectible game materials, and additional interactive challenges throughout the show.
-            </p>
-            <p class="text-gray-500 text-xs text-center">It's an entertainment add-on, not a purchase toward the purple Vacation Bingo prize. Every eligible guest still gets one free purple card regardless of whether they add the Party Upgrade Package.</p>
-        </div>
-        <div class="glass-card p-6 rounded-2xl border border-white/10 max-w-4xl mx-auto text-center">
-            <p class="text-gray-400 text-sm">
-                <strong class="text-white">No purchase necessary</strong> to enter or win any random-draw or sweepstakes prize. Rave Bingo is not gambling — there is no wagering, no betting, and no cash bingo. Sponsor-provided prizes and certificates are subject to sponsor terms.
+    <!-- Prize & Promotion Rules (compliance) -->
+    <section id="how-prizes-work" class="py-24 px-6 max-w-4xl mx-auto">
+        <h2 class="font-display text-3xl md:text-4xl font-bold text-center mb-10">Prize &amp; Promotion Rules</h2>
+        <div class="glass-card p-8 rounded-2xl border border-white/10">
+            <ul class="list-disc list-inside space-y-3 text-gray-400">
+                <li>The purple Vacation Bingo giveaway is free — no purchase necessary. Every eligible guest gets one free card, purple cards are never sold, and a free entry route is available through the <a href="winners-circle.html" class="text-[#00E5FF] hover:underline">Winner's Circle</a>.</li>
+                <li>The Party Upgrade Package is an optional paid add-on. It cannot win and does not affect the purple Vacation Bingo prize.</li>
+                <li>Stage-game prizes are won through actual skill games, with rules and scoring announced before each game.</li>
+                <li>Rave Bingo is not gambling — there is no wagering, no betting, and no cash bingo.</li>
+                <li>Sponsor-provided prizes are subject to sponsor terms. Void where prohibited.</li>
+            </ul>
+            <p class="text-gray-500 text-sm mt-6 text-center">
                 <a href="policies.html" class="text-[#00E5FF] hover:underline">Read the full Prize &amp; Promotions Policy →</a>
             </p>
-        </div>
-    </section>
-
-    <!-- WINNERS CIRCLE -->
-    <section id="winners-circle" class="py-24 px-6 bg-gradient-to-r from-purple-900/20 via-black to-[#00E5FF]/10 border-y border-white/10">
-        <div class="max-w-5xl mx-auto text-center">
-            <div class="inline-block px-4 py-1 mb-6 border border-purple-400/50 rounded-full bg-purple-500/10 text-purple-300 text-sm font-bold tracking-widest uppercase">
-                Free to Join. Always.
-            </div>
-            <h2 class="font-display text-4xl md:text-6xl font-black mb-6">JOIN THE <span class="gradient-text">WINNERS CIRCLE</span></h2>
-            <p class="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
-                Every winner has a story. The WINNERS CIRCLE is our free membership program. Members can receive <strong class="text-white">free comp-entry passes</strong> and a <strong class="text-white">free Party Upgrade Package</strong> at eligible events, get first access to stage-game contestant applications, and unlock the free entry route for purple Vacation Bingo.
-            </p>
-            <div class="grid sm:grid-cols-3 gap-4 max-w-3xl mx-auto mb-10 text-sm">
-                <div class="bg-black/40 p-4 rounded-xl border border-white/10"><span class="text-purple-400 font-bold">🎟️ Comp Entry</span><p class="text-gray-400 mt-1">Free admission passes to eligible events</p></div>
-                <div class="bg-black/40 p-4 rounded-xl border border-white/10"><span class="text-[#00E5FF] font-bold">🃏 Free Party Upgrade Package</span><p class="text-gray-400 mt-1">A free Party Upgrade Package at eligible events</p></div>
-                <div class="bg-black/40 p-4 rounded-xl border border-white/10"><span class="text-[#FF1744] font-bold">🎤 Be On Our Game Shows</span><p class="text-gray-400 mt-1">Apply free to be a stage-game contestant</p></div>
-            </div>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="https://forms.gle/obB5T9wEryjab1v6A" target="_blank" class="bg-gradient-to-r from-purple-500 to-[#00E5FF] text-black font-bold py-4 px-10 rounded-full text-lg hover:scale-105 transition-transform shadow-lg shadow-purple-500/40">
-                    Join Free Now
-                </a>
-                <a href="winners-circle.html" class="neon-border-cyan text-white font-bold py-4 px-10 rounded-full text-lg hover:bg-[#00E5FF]/10 transition-colors">
-                    Learn More
-                </a>
-            </div>
-            <p class="text-gray-500 text-xs mt-6">Membership is free. No purchase necessary. Joining does not require buying a ticket, and comp entries admit you to the same show as ticketed guests.</p>
-        </div>
-    </section>
-
-    <!-- Venue Sales Section -->
-    <section id="venues" class="py-24 px-6 max-w-7xl mx-auto">
-        <div class="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-                <h2 class="font-display text-4xl md:text-5xl font-bold mb-6">
-                    Give Your Bar a Night People <span class="neon-cyan">Actually Text Their Friends About</span>
-                </h2>
-                <p class="text-xl text-gray-300 mb-8">
-                    Rave Bingo Chicago is built for venues that want a social, high-energy event night that feels fresh but is easy for guests to understand. It is less passive than a DJ, more party-forward than trivia, and easier for groups to jump into than karaoke.
-                </p>
-                <ul class="space-y-4 mb-10">
-                    <li class="flex items-start"><span class="text-[#00E5FF] mr-3 mt-1">▹</span> Creates a reason to come early and stay longer</li>
-                    <li class="flex items-start"><span class="text-[#00E5FF] mr-3 mt-1">▹</span> Works on slower weeknights or special event nights</li>
-                    <li class="flex items-start"><span class="text-[#00E5FF] mr-3 mt-1">▹</span> Easy to promote with themed flyers</li>
-                    <li class="flex items-start"><span class="text-[#00E5FF] mr-3 mt-1">▹</span> Great for birthdays and group reservations</li>
-                    <li class="flex items-start"><span class="text-[#00E5FF] mr-3 mt-1">▹</span> Built-in prize and sponsor opportunities</li>
-                    <li class="flex items-start"><span class="text-[#00E5FF] mr-3 mt-1">▹</span> Strong photo/video/social content potential</li>
-                    <li class="flex items-start"><span class="text-[#00E5FF] mr-3 mt-1">▹</span> Can run monthly, weekly, or as a one-off</li>
-                </ul>
-                <a href="#contact" class="inline-block bg-[#00E5FF] text-black font-bold py-4 px-8 rounded-full hover:bg-[#00b8cc] transition-colors">
-                    Bring Rave Bingo to My Venue
-                </a>
-            </div>
-            <div class="glass-card p-8 rounded-2xl neon-border-red">
-                <h3 class="font-display text-3xl font-bold mb-4 text-[#FF1744]">Private Parties That Don't Feel Like Corporate Icebreakers</h3>
-                <p class="text-gray-300 mb-6">
-                    Whether it's a birthday, bachelorette-adjacent party, reunion, corporate happy hour, alumni event, or "we just need a reason to get everyone out," Rave Bingo gives the night structure without killing the vibe.
-                </p>
-                <a href="#contact" class="inline-block border border-[#FF1744] text-[#FF1744] font-bold py-3 px-6 rounded-full hover:bg-[#FF1744] hover:text-white transition-colors">
-                    Book a Private Party
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pilot / Footage Section -->
-    <section class="py-24 px-6 bg-gradient-to-t from-black to-[#FF1744]/10">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="font-display text-4xl md:text-5xl font-bold mb-6">
-                Want to Be One of the <span class="neon-cyan">First Official</span> Rave Bingo Chicago Events?
-            </h2>
-            <p class="text-xl text-gray-300 mb-8">
-                We're currently building the official Rave Bingo Chicago promo reel and booking a limited number of pilot events with preferred pricing. Selected events may receive discounted booking rates in exchange for allowing photo and video capture for future promotion.
-            </p>
-            <div class="flex flex-wrap justify-center gap-3 mb-10 text-sm font-semibold">
-                <span class="px-4 py-2 bg-[#00E5FF]/10 border border-[#00E5FF]/30 text-[#00E5FF] rounded-full">Bars</span>
-                <span class="px-4 py-2 bg-[#FF1744]/10 border border-[#FF1744]/30 text-[#FF1744] rounded-full">College / Greek Life</span>
-                <span class="px-4 py-2 bg-[#00E5FF]/10 border border-[#00E5FF]/30 text-[#00E5FF] rounded-full">Birthday Groups</span>
-                <span class="px-4 py-2 bg-[#FF1744]/10 border border-[#FF1744]/30 text-[#FF1744] rounded-full">Alumni Parties</span>
-                <span class="px-4 py-2 bg-[#00E5FF]/10 border border-[#00E5FF]/30 text-[#00E5FF] rounded-full">Fundraisers</span>
-                <span class="px-4 py-2 bg-[#FF1744]/10 border border-[#FF1744]/30 text-[#FF1744] rounded-full">Singles Mixers</span>
-                <span class="px-4 py-2 bg-[#00E5FF]/10 border border-[#00E5FF]/30 text-[#00E5FF] rounded-full">DJ Nights</span>
-                <span class="px-4 py-2 bg-[#FF1744]/10 border border-[#FF1744]/30 text-[#FF1744] rounded-full">Brunch-to-Nightlife</span>
-            </div>
-            <a href="#contact" class="inline-block bg-gradient-to-r from-[#FF1744] to-red-700 text-white font-bold py-4 px-10 rounded-full hover:scale-105 transition-transform shadow-lg shadow-[#FF1744]/40">
-                Ask About Pilot Pricing
-            </a>
         </div>
     </section>
 
@@ -441,7 +213,7 @@
             </details>
             <details class="glass-card rounded-xl p-6 group">
                 <summary class="font-bold text-lg cursor-pointer text-purple-400">How does the purple Vacation Bingo work?</summary>
-                <p class="text-gray-400 mt-3 text-sm">Purple Vacation Bingo is a free, no-purchase-necessary promotional sweepstakes. Every eligible guest gets one free purple card. Purple cards are never sold and there are no paid extras for this game. You can also request free entry through the <a href="winners-circle.html" class="text-[#00E5FF] hover:underline">WINNERS CIRCLE</a> without attending as a ticketed guest, where offered.</p>
+                <p class="text-gray-400 mt-3 text-sm">Purple Vacation Bingo is a free, no-purchase-necessary promotional sweepstakes. Every eligible guest gets one free purple card. Purple cards are never sold and there are no paid extras for this game. You can also request free entry through the <a href="winners-circle.html" class="text-[#00E5FF] hover:underline">Winner's Circle</a> without attending as a ticketed guest, where offered.</p>
             </details>
             <details class="glass-card rounded-xl p-6 group">
                 <summary class="font-bold text-lg cursor-pointer text-[#00E5FF]">What is the Party Upgrade Package?</summary>
@@ -449,32 +221,16 @@
             </details>
             <details class="glass-card rounded-xl p-6 group">
                 <summary class="font-bold text-lg cursor-pointer text-[#FF1744]">How are stage-game winners decided?</summary>
-                <p class="text-gray-400 mt-3 text-sm">Stage-game prizes are won through actual skill games — the rules and scoring are announced before each game, and winners are determined by performance, scoring, or judging. Contestants can come from free WINNERS CIRCLE applications, volunteers, host/audience participation, skill qualifiers, and Party Upgrade Package qualifiers.</p>
+                <p class="text-gray-400 mt-3 text-sm">Stage-game prizes are won through actual skill games — the rules and scoring are announced before each game, and winners are determined by performance, scoring, or judging. Contestants can come from free Winner's Circle applications, volunteers, host/audience participation, skill qualifiers, and Party Upgrade Package qualifiers.</p>
             </details>
             <details class="glass-card rounded-xl p-6 group">
-                <summary class="font-bold text-lg cursor-pointer text-purple-400">What is the WINNERS CIRCLE?</summary>
+                <summary class="font-bold text-lg cursor-pointer text-purple-400">What is the Winner's Circle?</summary>
                 <p class="text-gray-400 mt-3 text-sm">A free membership program. Members can receive free comp-entry passes and a free Party Upgrade Package at eligible events, and can apply to be stage-game contestants. <a href="https://forms.gle/obB5T9wEryjab1v6A" target="_blank" class="text-[#00E5FF] hover:underline">Join free here</a> — no purchase necessary.</p>
             </details>
             <details class="glass-card rounded-xl p-6 group">
                 <summary class="font-bold text-lg cursor-pointer text-[#00E5FF]">What about sponsor prizes and travel certificates?</summary>
                 <p class="text-gray-400 mt-3 text-sm">Some prizes are provided by third-party sponsors and are subject to the sponsor's own terms, conditions, availability, blackout dates, and redemption requirements. Rave Bingo and IRL Events are not responsible for sponsor fulfillment. See the <a href="policies.html" class="text-[#00E5FF] hover:underline">Prize &amp; Promotions Policy</a> for details.</p>
             </details>
-        </div>
-    </section>
-
-    <!-- More Than Bingo -->
-    <section class="py-20 px-6 bg-gradient-to-b from-black via-purple-900/10 to-black text-center">
-        <div class="max-w-3xl mx-auto">
-            <p class="font-display text-2xl md:text-4xl font-bold text-gray-300 leading-relaxed">
-                More than bingo.<br>
-                It's a concert.<br>
-                It's a party.<br>
-                It's a game show.<br>
-                It's a night out you'll actually remember.
-            </p>
-            <p class="font-display text-3xl md:text-5xl font-black gradient-text mt-8">
-                Welcome to Rave Bingo Chicago.
-            </p>
         </div>
     </section>
 
@@ -508,7 +264,6 @@
             </div>
             <div class="text-gray-600 text-sm">
                 <p>&copy; 2024 Rave Bingo Chicago. All rights reserved.</p>
-                <p class="mt-2 italic">"It starts as bingo. It turns into yelling, dancing, prize chasing, and pretending you knew the song before the drop."</p>
             </div>
         </div>
     </footer>
